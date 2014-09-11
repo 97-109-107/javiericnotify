@@ -76,7 +76,7 @@ class EvProc(ProcessEvent):
                 str = str.replace("$path", shescape(event.path))
                 str = str.replace("$name", shescape(event.name))
                 str = str.replace("$file", shescape(event.name))
-                str = str.replace("$event_name", event.event_name)
+                str = str.replace("$event_name", shescape(event.name))
                 #following are broken because I can't be bothered with converting to string
                 #str = str.replace("$mask", str(event.mask))
                 #str = str.replace("$cookie", str(event.cookie))
